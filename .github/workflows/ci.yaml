@@ -15,7 +15,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
-          repository: 'banerjeeakash97/AkashBanerjee'
+          repository: 'banerjeeakash97/mkdocs_website'
           token: ${{ secrets.token }}
           
       - name: Setup Pages
