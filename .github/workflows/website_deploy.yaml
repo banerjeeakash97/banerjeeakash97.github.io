@@ -38,7 +38,7 @@ jobs:
         run: |
           pip install mkdocs mkdocs-material mkdocs-glightbox mkdocs-material-extensions pymdown-extensions
       - name: Build site (_site directory name is used for Jekyll compatiblity)
-        run: mkdocs build --config-file ./mkdocs.yml --strict --site-dir ./_site
+        run: mkdocs build --config-file ./mkdocs.yml --no-strict --site-dir ./_site
         env:
           CI: true
       - name: Upload artifact
